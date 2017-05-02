@@ -129,6 +129,7 @@ PRODUCT_PACKAGES += \
     Jelly \
     LiveLockScreenService \
     LockClock \
+    ThemeInterfacer \
     Trebuchet \
     WallpaperPicker \
     WeatherProvider
@@ -317,7 +318,8 @@ PRODUCT_PROPERTY_OVERRIDES += \
     ro.cm.version=$(LINEAGE_VERSION) \
     ro.cm.releasetype=$(CM_BUILDTYPE) \
     ro.modversion=$(LINEAGE_VERSION) \
-    ro.cmlegal.url=https://lineageos.org/legal
+    ro.cmlegal.url=https://lineageos.org/legal \
+    ro.lineageoms.version=$(LINEAGE_VERSION)
 
 PRODUCT_EXTRA_RECOVERY_KEYS += \
     vendor/cm/build/target/product/security/lineage
